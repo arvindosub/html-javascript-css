@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Banks</title>
+  </head>
+  <body>
+    <ul id = "list">
+        <li>DBS</li>
+        <li>OCBC</li>
+        <li>UOB</li>
+        <li>Citi</li>
+    </ul>
+    <button class = "button" onclick="addNew()">Click Me</button>
+    <script language = "javascript">
+        function addNew() {
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode("MYDigi Bank"));
+            document.getElementById("list").appendChild(li);
+        }
+    </script>
+  </body>
+</html>
